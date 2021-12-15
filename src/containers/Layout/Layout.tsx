@@ -20,7 +20,7 @@ const Layout: React.FC = () => {
         />
         <Route
           path={process.env.PUBLIC_URL + "/"}
-          element={<Navigate replace to="/blog" />}
+          element={<Navigate replace to={process.env.PUBLIC_URL + "/blog"} />}
         />
       </Routes>
     </BrowserRouter>
