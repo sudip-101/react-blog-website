@@ -67,7 +67,7 @@ const Blogs: React.FC<IBlogsProps> = ({ items, singleBlog, val }) => {
       <div className="container blogs-container">
         {!val
           ? blogs.map((blog) => (
-              <Link to={process.env.PUBLIC_URL + `${blog._id}`}>
+              <Link to={process.env.PUBLIC_URL + `/blog/${blog._id}`}>
                 <BlogCard {...blog} key={blog._id} />
               </Link>
             ))
@@ -75,13 +75,13 @@ const Blogs: React.FC<IBlogsProps> = ({ items, singleBlog, val }) => {
         {!val ? (
           items ? (
             items.map((item: IBlogObjProps) => (
-              <Link to={process.env.PUBLIC_URL + `${item._id}`}>
+              <Link to={process.env.PUBLIC_URL + `/blog/${item._id}`}>
                 <BlogCard {...item} key={item._id} />
               </Link>
             ))
           ) : null
         ) : singleBlog ? (
-          <Link to={process.env.PUBLIC_URL + `${singleBlog._id}`}>
+          <Link to={process.env.PUBLIC_URL + `/blog/${singleBlog._id}`}>
             <BlogCard {...singleBlog} />
           </Link>
         ) : null}
