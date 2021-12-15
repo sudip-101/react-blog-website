@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.c96aa57e.chunk.css",
-    "main.js": "/static/js/main.8a923eb8.chunk.js",
-    "main.js.map": "/static/js/main.8a923eb8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6e019cb6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6e019cb6.js.map",
-    "static/css/2.f83b9687.chunk.css": "/static/css/2.f83b9687.chunk.css",
-    "static/js/2.c8f24a51.chunk.js": "/static/js/2.c8f24a51.chunk.js",
-    "static/js/2.c8f24a51.chunk.js.map": "/static/js/2.c8f24a51.chunk.js.map",
-    "static/js/3.0171afe6.chunk.js": "/static/js/3.0171afe6.chunk.js",
-    "static/js/3.0171afe6.chunk.js.map": "/static/js/3.0171afe6.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.f83b9687.chunk.css.map": "/static/css/2.f83b9687.chunk.css.map",
-    "static/css/main.c96aa57e.chunk.css.map": "/static/css/main.c96aa57e.chunk.css.map",
-    "static/js/2.c8f24a51.chunk.js.LICENSE.txt": "/static/js/2.c8f24a51.chunk.js.LICENSE.txt",
-    "static/media/Hero.scss": "/static/media/hero-cover.e2b2c666.jpg"
+    "main.css": "/react-blog-website/static/css/main.6052b6c0.chunk.css",
+    "main.js": "/react-blog-website/static/js/main.227dfcf8.chunk.js",
+    "main.js.map": "/react-blog-website/static/js/main.227dfcf8.chunk.js.map",
+    "runtime-main.js": "/react-blog-website/static/js/runtime-main.2d91f296.js",
+    "runtime-main.js.map": "/react-blog-website/static/js/runtime-main.2d91f296.js.map",
+    "static/css/2.f83b9687.chunk.css": "/react-blog-website/static/css/2.f83b9687.chunk.css",
+    "static/js/2.c8f24a51.chunk.js": "/react-blog-website/static/js/2.c8f24a51.chunk.js",
+    "static/js/2.c8f24a51.chunk.js.map": "/react-blog-website/static/js/2.c8f24a51.chunk.js.map",
+    "static/js/3.0171afe6.chunk.js": "/react-blog-website/static/js/3.0171afe6.chunk.js",
+    "static/js/3.0171afe6.chunk.js.map": "/react-blog-website/static/js/3.0171afe6.chunk.js.map",
+    "index.html": "/react-blog-website/index.html",
+    "static/css/2.f83b9687.chunk.css.map": "/react-blog-website/static/css/2.f83b9687.chunk.css.map",
+    "static/css/main.6052b6c0.chunk.css.map": "/react-blog-website/static/css/main.6052b6c0.chunk.css.map",
+    "static/js/2.c8f24a51.chunk.js.LICENSE.txt": "/react-blog-website/static/js/2.c8f24a51.chunk.js.LICENSE.txt",
+    "static/media/Hero.scss": "/react-blog-website/static/media/hero-cover.e2b2c666.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6e019cb6.js",
+    "static/js/runtime-main.2d91f296.js",
     "static/css/2.f83b9687.chunk.css",
     "static/js/2.c8f24a51.chunk.js",
-    "static/css/main.c96aa57e.chunk.css",
-    "static/js/main.8a923eb8.chunk.js"
+    "static/css/main.6052b6c0.chunk.css",
+    "static/js/main.227dfcf8.chunk.js"
   ]
 }
