@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+@import "./variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// html {
+//   scroll-behavior: smooth;
+// }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 13px 25px;
+  border-radius: $br-small;
+  font-size: 16px;
+}
+
+::placeholder {
+  font-size: 16px;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 13px 25px;
+  border-radius: $br-small;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: $padding-big;
+  @media only screen and (max-width: 548px) {
+    padding: 24px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.15;
+}
+
+svg {
+  vertical-align: middle;
+}

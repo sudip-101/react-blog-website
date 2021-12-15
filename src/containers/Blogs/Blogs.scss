@@ -1,0 +1,25 @@
+@import "../../variables";
+.blogs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 40px;
+  margin-block: 60px;
+}
+.add-blog {
+  padding: 40px;
+  background: $mid-black;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  @media only screen and (max-width: 548px) {
+    padding: 40px 24px;
+  }
+  .btn-create {
+    background: none;
+    color: $mid-accent;
+    border: 2px solid $mid-accent;
+  }
+}

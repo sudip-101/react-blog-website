@@ -1,0 +1,46 @@
+@import "../../variables";
+
+.blog-card {
+  height: 420px;
+  max-width: 350px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 28px -5px rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
+  transition: box-shadow 250ms ease-in-out, transform 200ms ease-in-out;
+  &:hover {
+    box-shadow: 2px 20px 28px -5px rgba(0, 0, 0, 0.25);
+    transform: translateY(-6px);
+  }
+  .card-img {
+    height: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 12px 12px 0 0;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 50%;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid $lightgrey;
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .content {
+      font-size: 22px;
+      font-weight: 400;
+    }
+    .bottom {
+      display: flex;
+      gap: 8px;
+      font-weight: 300;
+    }
+  }
+}

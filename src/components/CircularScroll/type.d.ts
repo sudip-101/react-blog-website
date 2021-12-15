@@ -1,0 +1,3 @@
+interface ICircularScrollProps {
+    percent: number
+}

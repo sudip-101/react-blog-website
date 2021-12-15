@@ -1,0 +1,15 @@
+@import "../../variables";
+
+.blog-editor {
+  padding-block: 24px;
+  border-top: 1px solid $black;
+  h2 {
+    margin-bottom: 16px;
+  }
+  .text-editor {
+    width: 100%;
+  }
+  .ql-editor {
+    min-height: 100px;
+  }
+}
