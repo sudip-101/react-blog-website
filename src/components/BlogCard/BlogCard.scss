@@ -5,6 +5,7 @@
   max-width: 350px;
   margin: auto;
   border-radius: 12px;
+  border: 1px solid $lightgrey;
   box-shadow: 0 20px 28px -5px rgba(0, 0, 0, 0.15);
   transform: translateY(0);
   transition: box-shadow 250ms ease-in-out, transform 200ms ease-in-out;
@@ -27,8 +28,8 @@
     height: 50%;
     justify-content: space-between;
     padding: 20px;
+    border-top: 1px solid $lightgrey;
     border-radius: 0 0 12px 12px;
-    border: 1px solid $lightgrey;
     .title {
       font-size: 18px;
       font-weight: 600;
