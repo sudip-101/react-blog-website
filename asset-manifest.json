@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-blog-website/static/css/main.6052b6c0.chunk.css",
+    "main.css": "/react-blog-website/static/css/main.98340239.chunk.css",
     "main.js": "/react-blog-website/static/js/main.c4b37627.chunk.js",
     "main.js.map": "/react-blog-website/static/js/main.c4b37627.chunk.js.map",
     "runtime-main.js": "/react-blog-website/static/js/runtime-main.2d91f296.js",
@@ -12,7 +12,7 @@
     "static/js/3.0171afe6.chunk.js.map": "/react-blog-website/static/js/3.0171afe6.chunk.js.map",
     "index.html": "/react-blog-website/index.html",
     "static/css/2.f83b9687.chunk.css.map": "/react-blog-website/static/css/2.f83b9687.chunk.css.map",
-    "static/css/main.6052b6c0.chunk.css.map": "/react-blog-website/static/css/main.6052b6c0.chunk.css.map",
+    "static/css/main.98340239.chunk.css.map": "/react-blog-website/static/css/main.98340239.chunk.css.map",
     "static/js/2.c8f24a51.chunk.js.LICENSE.txt": "/react-blog-website/static/js/2.c8f24a51.chunk.js.LICENSE.txt",
     "static/media/Hero.scss": "/react-blog-website/static/media/hero-cover.e2b2c666.jpg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.2d91f296.js",
     "static/css/2.f83b9687.chunk.css",
     "static/js/2.c8f24a51.chunk.js",
-    "static/css/main.6052b6c0.chunk.css",
+    "static/css/main.98340239.chunk.css",
     "static/js/main.c4b37627.chunk.js"
   ]
 }
