@@ -46,7 +46,7 @@ const BlogPage: React.FC = () => {
   return (
     <div className="BlogPage">
       <header className="blog-page-header">
-        <Link to={process.env.PUBLIC_URL + "/blog"}>
+        <Link to={"/blog"}>
           <div className="round-back-btn">
             <span>
               <i className="fas fa-long-arrow-alt-left"></i>

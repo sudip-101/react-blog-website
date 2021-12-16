@@ -210,7 +210,7 @@ const CreateBlog: React.FC = () => {
           <button className="btn-submit" onClick={submitHandler}>
             Submit
           </button>
-          <Link to={process.env.PUBLIC_URL + "/blog"}>
+          <Link to={"/blog"}>
             <button className="btn-back">Back</button>
           </Link>
         </div>
