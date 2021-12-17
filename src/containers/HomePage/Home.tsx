@@ -9,7 +9,13 @@ const Home: React.FC = () => {
   const [query, setQuery] = useState<string>();
   const [val, setVal] = useState<boolean>();
   const [singleBlog, setSingleBlog] = useState<IItemsArr>();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
   const url = "https://mwv-blogapi.herokuapp.com/api";
+
   useEffect(() => {
     axios
       .get(url)
@@ -20,6 +26,7 @@ const Home: React.FC = () => {
       })
       .catch((error) => console.log(error));
   }, []);
+
   useEffect(() => {
     if (query) {
       axios

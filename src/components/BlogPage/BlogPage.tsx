@@ -12,6 +12,7 @@ const BlogPage: React.FC = () => {
   const [oneBlog, setOneBlog] = useState<IItemsArr>();
   const scrollMeasurer = useRef<HTMLDivElement>(null);
   const [percent, setPercent] = useState<number>(0);
+
   useEffect(() => {
     axios
       .get(`https://mwv-blogapi.herokuapp.com/api/id/${BLOG_ID}`)
@@ -21,6 +22,7 @@ const BlogPage: React.FC = () => {
       })
       .catch((error) => console.log(error));
   }, [BLOG_ID]);
+
   function scrollCheckHandler() {
     let maxScrollLength = 0;
     if (scrollMeasurer.current) {
@@ -31,6 +33,7 @@ const BlogPage: React.FC = () => {
       setPercent(maxPercent);
     }
   }
+
   useEffect(() => {
     scrollCheckHandler();
     window.addEventListener("scroll", scrollCheckHandler);
@@ -40,9 +43,11 @@ const BlogPage: React.FC = () => {
       window.removeEventListener("resize", scrollCheckHandler);
     };
   }, []);
+
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
+
   return (
     <div className="BlogPage">
       <header className="blog-page-header">

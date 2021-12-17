@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Editor from "../../components/BlogEditor/Editor";
 import "./CreateBlog.scss";
@@ -21,6 +21,7 @@ const CreateBlog: React.FC = () => {
       setAuthorImg(e.target.result);
     };
   };
+
   const showInputMainImage = (e: any) => {
     const file = e.target.files[0];
     const reader = new FileReader();
@@ -29,10 +30,13 @@ const CreateBlog: React.FC = () => {
       setMainImg(e.target.result);
     };
   };
+
   const updateBlogContent = (value: any) => {
     setBlogContent(value);
   };
+
   const url = "https://mwv-blogapi.herokuapp.com/api";
+
   const submitHandler = (e: any) => {
     e.preventDefault();
     setBlogObj({
@@ -50,6 +54,11 @@ const CreateBlog: React.FC = () => {
       .then((response) => console.log(response.data))
       .catch((error) => console.log(error));
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
+
   return (
     <div className="create-blog-page">
       <fieldset className="blog-details">
