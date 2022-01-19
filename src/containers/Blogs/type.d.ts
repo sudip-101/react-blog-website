@@ -14,6 +14,6 @@ interface IItemsArr {
 
 interface IBlogsProps {
     items: Array,
-    singleBlog: IItemsArr | undefined, 
+    loading: boolean, 
     val: boolean | undefined
 }

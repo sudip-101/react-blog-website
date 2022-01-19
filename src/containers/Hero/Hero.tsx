@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.scss";
 
-const Hero: React.FC<IHeroProps> = ({ getSearch, search, updateSearch }) => {
+const Hero: React.FC = () => {
   return (
     <div className="container hero-container">
       <div className="hero-bg"></div>
@@ -20,21 +20,6 @@ const Hero: React.FC<IHeroProps> = ({ getSearch, search, updateSearch }) => {
           <div>
             <button type="submit" className="btn btn-subscribe hero-form-btn">
               Subscribe
-            </button>
-          </div>
-        </form>
-        <form className="hero-form search-form" onSubmit={getSearch}>
-          <input
-            type="text"
-            className="hero-form-input search-input"
-            placeholder="Search"
-            required
-            value={search}
-            onChange={updateSearch}
-          />
-          <div>
-            <button type="submit" className="btn btn-search hero-form-btn">
-              Search
             </button>
           </div>
         </form>

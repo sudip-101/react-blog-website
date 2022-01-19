@@ -1,10 +1,14 @@
 @import "../../variables";
 .blogs-container {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
   justify-content: center;
+  // place-items: center;
   gap: 40px;
-  margin-block: 60px;
+  margin-block-end: 60px;
+  position: relative;
 }
 .add-blog {
   padding: 40px;
