@@ -15,6 +15,14 @@ const Home: React.FC = () => {
 
   const [loading, setLoading] = useState<boolean>(true);
 
+  const filters = [
+    { tag: "Technology" },
+    { tag: "Fashion" },
+    { tag: "Science" },
+    { tag: "Food" },
+    { tag: "Travel" },
+  ];
+
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -69,6 +77,18 @@ const Home: React.FC = () => {
     setLoading(true);
   };
 
+  const clearFilter = (e: any) => {
+    setFilterTag("");
+    setLoading(true);
+    axios
+      .get(url)
+      .then((response) => {
+        setLoading(false);
+        setItems(response.data.result);
+      })
+      .catch((error) => console.log(error));
+  };
+
   useEffect(() => {
     axios
       .get(url)
@@ -97,60 +117,27 @@ const Home: React.FC = () => {
         </div>
       </form>
       <div className="filter-container container">
-        <div className="filter-element">
-          <input
-            type="radio"
-            name="tag"
-            id="technology"
-            value="Technology"
-            checked={filterTag === "Technology"}
-            onChange={updateFilterSearch}
-          />
-          <label htmlFor="technology">Technology</label>
+        <div className="filter-head">
+          <h2>Filter by Categories</h2>
+          <p className="btn-clear" onClick={clearFilter}>
+            Clear Filter
+          </p>
         </div>
-        <div className="filter-element">
-          <input
-            type="radio"
-            name="tag"
-            id="fashion"
-            value="Fashion"
-            checked={filterTag === "Fashion"}
-            onChange={updateFilterSearch}
-          />
-          <label htmlFor="fashion">Fashion</label>
-        </div>
-        <div className="filter-element">
-          <input
-            type="radio"
-            name="tag"
-            id="science"
-            value="Science"
-            checked={filterTag === "Science"}
-            onChange={updateFilterSearch}
-          />
-          <label htmlFor="science">Science</label>
-        </div>
-        <div className="filter-element">
-          <input
-            type="radio"
-            name="tag"
-            id="food"
-            value="Food"
-            checked={filterTag === "Food"}
-            onChange={updateFilterSearch}
-          />
-          <label htmlFor="food">Food</label>
-        </div>
-        <div className="filter-element">
-          <input
-            type="radio"
-            name="tag"
-            id="travel"
-            value="Travel"
-            checked={filterTag === "Travel"}
-            onChange={updateFilterSearch}
-          />
-          <label htmlFor="travel">Travel</label>
+        <div className="filter-element-list">
+          {filters.map((filter) => (
+            <div className="filter-element" key={filter.tag}>
+              <input
+                type="radio"
+                className="filter-radio"
+                name={filter.tag}
+                id={filter.tag}
+                value={filter.tag}
+                checked={filterTag === filter.tag}
+                onChange={updateFilterSearch}
+              />
+              <label htmlFor={filter.tag}>{filter.tag}</label>
+            </div>
+          ))}
         </div>
       </div>
       <Blogs val={val} items={items} loading={loading} />

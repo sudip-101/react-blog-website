@@ -1,18 +1,16 @@
 @import "../../variables";
 
 .search-form {
-  max-width: 100%;
+  max-width: 648px;
   margin-block-start: 60px;
   padding-block-start: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid $grey;
   .search-input {
     font-size: 16px;
     border: 1px solid $mid-white;
     width: 100%;
-    max-width: 500px;
     color: $lightblack;
     border-radius: 4px 0 0 4px;
     background: $mid-white;
@@ -33,25 +31,63 @@
 }
 
 .filter-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 600px;
+  max-width: 648px;
   gap: 24px;
-  .filter-element {
+  .filter-head {
+    padding-bottom: 1rem;
+    margin-bottom: 1.6rem;
+    border-bottom: 1px solid $grey;
     display: flex;
     align-items: center;
-    gap: 6px;
-    label {
-      font-size: 20px;
+    justify-content: space-between;
+    gap: 24px;
+    h1 {
+      color: $lightblack;
       font-weight: 600;
+      font-size: 1.6rem;
+    }
+    .btn-clear {
+      font-weight: 600;
+      color: $accent;
+      cursor: pointer;
+      transition: color 250ms ease-in-out;
+      &:hover {
+        color: $dark-accent;
+      }
+    }
+  }
+  .filter-element-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .filter-element {
+      label {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 8px 16px;
+        background: $lightgrey;
+        border-radius: 50px;
+        color: $lightblack;
+        transition: background 250ms ease-in-out;
+        &:hover {
+          background: rgba(0, 0, 0, 0.275);
+        }
+      }
+      input[type="radio"] {
+        display: none;
+      }
+      input[type="radio"]:checked ~ label {
+        background: rgba(0, 0, 0, 0.275);
+      }
     }
   }
 }
 
 @media only screen and (max-width: 648px) {
-  .filter-container {
+  .filter-element-list {
     justify-content: center;
   }
 }
