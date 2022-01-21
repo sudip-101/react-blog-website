@@ -32,7 +32,6 @@
 
 .filter-container {
   max-width: 648px;
-  gap: 24px;
   .filter-head {
     padding-bottom: 1rem;
     margin-bottom: 1.6rem;
@@ -61,6 +60,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 16px;
     .filter-element {
       label {
         display: inline-block;
@@ -87,7 +87,9 @@
 }
 
 @media only screen and (max-width: 648px) {
-  .filter-element-list {
-    justify-content: center;
+  .filter-container {
+    .filter-element-list {
+      justify-content: center;
+    }
   }
 }
