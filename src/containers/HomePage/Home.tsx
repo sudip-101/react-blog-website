@@ -11,7 +11,6 @@ const Home: React.FC = () => {
   const [query, setQuery] = useState<string>();
   const [filterTag, setFilterTag] = useState<string>();
   const [val, setVal] = useState<boolean>();
-  // const [singleBlog, setSingleBlog] = useState<IItemsArr>();
 
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -37,7 +36,6 @@ const Home: React.FC = () => {
           console.log(response.data);
           setLoading(false);
           setVal(true);
-          // setSingleBlog(response.data.result);
           setItems(response.data.result);
         })
         .catch((error) => console.log(error));
@@ -78,15 +76,17 @@ const Home: React.FC = () => {
   };
 
   const clearFilter = (e: any) => {
-    setFilterTag("");
-    setLoading(true);
-    axios
-      .get(url)
-      .then((response) => {
-        setLoading(false);
-        setItems(response.data.result);
-      })
-      .catch((error) => console.log(error));
+    if (filterTag) {
+      axios
+        .get(url)
+        .then((response) => {
+          setLoading(false);
+          setItems(response.data.result);
+        })
+        .catch((error) => console.log(error));
+      setLoading(true);
+      setFilterTag("");
+    }
   };
 
   useEffect(() => {
