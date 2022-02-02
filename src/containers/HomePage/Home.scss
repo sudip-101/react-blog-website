@@ -49,10 +49,6 @@
       font-weight: 600;
       color: $accent;
       cursor: pointer;
-      transition: color 250ms ease-in-out;
-      &:hover {
-        color: $dark-accent;
-      }
     }
   }
   .filter-element-list {
@@ -60,7 +56,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
+    row-gap: 16px;
+    column-gap: 12px;
     .filter-element {
       label {
         display: inline-block;
@@ -86,10 +83,11 @@
   }
 }
 
-@media only screen and (max-width: 648px) {
+@media only screen and (max-width: 660px) {
   .filter-container {
     .filter-element-list {
       justify-content: center;
+      column-gap: 16px;
     }
   }
 }

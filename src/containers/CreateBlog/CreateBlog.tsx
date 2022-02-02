@@ -115,12 +115,14 @@ const CreateBlog: React.FC = () => {
                 className="col-75-input"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
+                style={{ background: "none" }}
               >
                 <option value="Technology">Technology</option>
                 <option value="Fashion">Fashion</option>
                 <option value="Science">Science</option>
                 <option value="Food">Food</option>
                 <option value="Travel">Travel</option>
+                <option value="Lifestyle">Lifestyle</option>
               </select>
             </div>
           </div>

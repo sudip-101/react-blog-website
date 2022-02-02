@@ -20,6 +20,7 @@ const Home: React.FC = () => {
     { tag: "Science" },
     { tag: "Food" },
     { tag: "Travel" },
+    { tag: "Lifestyle" },
   ];
 
   useEffect(() => {

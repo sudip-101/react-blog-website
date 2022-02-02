@@ -3,8 +3,8 @@ import BlogCard from "../../components/BlogCard/BlogCard";
 import "./Blogs.scss";
 import { Link } from "react-router-dom";
 import Loader from "../../components/Loader/Loader";
-import axios from "axios";
-import { blogHtml } from "../../components/BlogPage/StaticBlog";
+// import axios from "axios";
+// import { blogHtml } from "../../components/BlogPage/StaticBlog";
 
 const Blogs: React.FC<IBlogsProps> = ({ items, loading, val }) => {
   // const blogs = [
@@ -80,13 +80,6 @@ const Blogs: React.FC<IBlogsProps> = ({ items, loading, val }) => {
   return (
     <div>
       <div className="container blogs-container">
-        {/* {!val
-          ? blogs.map((blog) => (
-              <Link to={`/blog/${blog._id}`}>
-                <BlogCard {...blog} key={blog._id} />
-              </Link>
-            ))
-          : null} */}
         {loading ? (
           <Loader />
         ) : items ? (
@@ -96,19 +89,6 @@ const Blogs: React.FC<IBlogsProps> = ({ items, loading, val }) => {
             </Link>
           ))
         ) : null}
-        {/* {!val ? (
-          items ? (
-            items.map((item: IBlogObjProps) => (
-              <Link to={`/blog/${item._id}`}>
-                <BlogCard {...item} key={item._id} />
-              </Link>
-            ))
-          ) : null
-        ) : singleBlog ? (
-          <Link to={`/blog/${singleBlog._id}`}>
-            <BlogCard {...singleBlog} />
-          </Link>
-        ) : null} */}
       </div>
       <div className="add-blog">
         <h1>Add your own content</h1>
